@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- <link rel="stylesheet" type="text/css" href="../common/common.css"> -->
+	<style type="text/css">
+	html{background: #edece9}
+	.container{position: relative; max-width: 1180px; margin: auto}
+
+	.waterfall{border: solid 1px #ddd; padding: 1em; margin: 1em}
+	.waterfall-item{
+		width: 236px;
+		/*position: absolute;*/
+		margin: 8px;
+		float: left;
+		font-size: 12px;
+		background-color: #fff;
+		box-shadow: 0 10px 40px #ccc;
+		-moz-box-shadow: 0 10px 40px #ccc;
+		-webkit-box-shadow: 0 10px 40px #ccc;
+		transition: 1s;
+	}
+	.waterfall-item>img{display: block; width: 100%}
+	.img-name{
+		padding: .75em;
+		word-break: break-all;
+		word-wrap: break-word;
+	}
+	</style>
+</head>
+<body>
+
+<!-- container{ -->
+<div class="container">
+
+	<div class="waterfall"><!-- 
+
+		<div class="waterfall-item">
+			<img src="img/i (1).jpg">
+			<div class="img-name">img/i (1).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (2).jpg">
+			<div class="img-name">img/i (2).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (3).jpg">
+			<div class="img-name">img/i (3).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (4).jpg">
+			<div class="img-name">img/i (4).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (5).jpg">
+			<div class="img-name">img/i (5).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (6).jpg">
+			<div class="img-name">img/i (6).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (7).jpg">
+			<div class="img-name">img/i (7).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (8).jpg">
+			<div class="img-name">img/i (8).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (9).jpg">
+			<div class="img-name">img/i (9).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (10).jpg">
+			<div class="img-name"> img/i (10).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (11).jpg">
+			<div class="img-name"> img/i (11).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (12).jpg">
+			<div class="img-name"> img/i (12).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (13).jpg">
+			<div class="img-name"> img/i (13).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (14).jpg">
+			<div class="img-name"> img/i (14).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (15).jpg">
+			<div class="img-name"> img/i (15).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (16).jpg">
+			<div class="img-name"> img/i (16).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (17).jpg">
+			<div class="img-name"> img/i (17).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (18).jpg">
+			<div class="img-name"> img/i (18).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (19).jpg">
+			<div class="img-name"> img/i (19).jpg</div>
+		</div>
+		
+		<div class="waterfall-item">
+			<img src="img/i (20).jpg">
+			<div class="img-name"> img/i (20).jpg</div>
+		</div> -->
+		
+	</div>
+
+</div>
+<!-- }container -->
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="waterfall.js"></script>
+<script id="tmpl" type="text/tmpl">
+<div class="waterfall-item">
+	<img src="$src">
+	<div class="img-name">$name</div>
+</div>
+</script>
+<script type="text/javascript">
+	testData = [
+		{img: {src: 'http://img.hb.aicdn.com/f7adda670bf27b73dc37049e066ac40d16decc8846ffe-zBeWHd_fw658'}, name: '图片1', desc: '这是一张图片'},
+		{img: {src: 'http://img.hb.aicdn.com/afa54fd6ed1e0762705d733a32fd9dd2ea55352421516-dQe6j8_fw658'}, name: '图片2', desc: '这是一张图片'},
+		{img: {src: 'http://img.hb.aicdn.com/355a8b2a9d84056e8e0283ddf37d23b3b2b4e7cc2dabdc-bSyq7F_fw658'}, name: '图片3', desc: '这是一张图片'},
+		{img: {src: 'http://img.hb.aicdn.com/c5edfb3f21af824b9b64f2aaf834229edbdb294dcbe1-UXU6wQ_fw658'}, name: '图片4', desc: '这是一张图片'},
+		{img: {src: 'http://img.hb.aicdn.com/708af4e0ac5fbfa962010a1e71e6b121eca72e4d21eda-qj7PBJ_fw658'}, name: '图片5', desc: '这是一张图片'},
+		{img: {src: 'img/i (1).jpg'}, name: '图片1', desc: '这是一张图片'},
+
+		{img: {src: 'img/i (2).jpg'}, name: '图片2', desc: '这是一张图片'},
+		// {img: {src: 'img/i (3).jpg'}, name: '图片3', desc: '这是一张图片'},
+		// {img: {src: 'img/i (4).jpg'}, name: '图片4', desc: '这是一张图片'},
+		// {img: {src: 'img/i (5).jpg'}, name: '图片5', desc: '这是一张图片'},
+	];
+
+	// waterfall({
+	// 	container: '#waterfall',
+	// 	item: '.waterfall-item',
+	// 	url: 'img/',
+	// 	pageCount: 10,
+
+	// });
+
+	var $waterfall = $('.waterfall');
+	var tmpl = $('#tmpl').html();
+
+	// 循环数据
+	for (var i = 0; i < testData.length; i++) {
+		var data = testData[i];
+
+		// 创建模型
+		var item = tmpl.replace('$src', data.img.src)
+			.replace('$name', data.name);
+
+		// 添加模型
+		$item = $(item);
+		$waterfall.append($item);
+		// 初始位置
+		$item.css({
+			position: 'absolute',
+			top: 500,
+			left: '40%',
+		});
+
+		// 新建个 Image 对象，用于图片预加载
+		var img = new Image;
+		img.src = data.img.src;
+
+		// 附加对应的数据，当加载完成时调用
+		img.data = data;
+		img.$item = $item;
+
+		// 加载完成事件
+		img.onload = function(){
+			// 取出对应的数据
+			var data = this.data;
+			var $item = this.$item;
+			console.log('img: ', i, this.data);
+
+			// 定位
+			$item.css({
+				position: 'absolute',
+				top: 110,
+				left: 0,
+				left: Math.random()*1180,
+			});
+
+			// ---
+			this = null;
+		}
+
+	};
+</script>
+</body>
+</html>
